@@ -1,4 +1,6 @@
 # Raymarching-Experiments
+[shaderToy Project](https://www.shadertoy.com/view/sf2XWd)
+
 J'ai voulu tester de reproduire des effets visuel codé avec des shaders nottament pour creer des objets 3D,
 des effets visuel comme de la lumière réaliste, de la diffusion lumineuse, du [Raymarching](https://fr.wikipedia.org/wiki/Ray_marching), raytracing....
 
@@ -38,6 +40,9 @@ float RayMarch(vec3 pos, vec3 dir)
 ```
 Si la valeur est negative on retourne une couleur noir et du blanc sinon, c'est la couleur de la sphere.
 Elle apparait en 2d on peut passer a la lumiere pour avoir la 3D
+
+![exemple](images/SphereExemple.png)
+
 Après l'affichage de la couleur on peut calculer la lumiere:
 
 $$
@@ -64,6 +69,10 @@ vec3 GetNormal(vec3 p)
 ```
 Ensuite pour les ombres on renvoie un rayon depuis le point d impact vers la lumiere et si c'est obstrué on affiche une valeur sombre,
 j'ai mis la valeur proportionnel a la distance parcouru pour avoir des ombres plus douces sur les bords.
+
+# Volumetric Clouds
+[shaderToy Project](https://www.shadertoy.com/view/f3X3Dr)
+
 
 $$
 L = \int_0^D T(t)\cdot\sigma_s \cdot L_{\text{in}}(t)\space dt \approx \sum_{i} T_i \cdot \sigma_s \cdot\Delta t\cdot L_{\text{in}}(p_i)
