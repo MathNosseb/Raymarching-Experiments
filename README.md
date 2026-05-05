@@ -45,10 +45,7 @@ Elle apparait en 2d on peut passer a la lumiere pour avoir la 3D
 
 Après l'affichage de la couleur on peut calculer la lumiere:
 
-
-$$
-L = \hat{n} \cdot \hat{l}
-$$
+![formule](https://latex.codecogs.com/svg.image?L%3D%5Chat%7Bn%7D%5Ccdot%5Chat%7Bl%7D)
 
 
 Cette formule nous donne une intensité de lumiere avec la normale de la surface touché et le vecteur de la lumière
