@@ -45,9 +45,11 @@ Elle apparait en 2d on peut passer a la lumiere pour avoir la 3D
 
 Après l'affichage de la couleur on peut calculer la lumiere:
 
+
 $$
 L = \hat{n} \cdot \hat{l}
 $$
+
 
 Cette formule nous donne une intensité de lumiere avec la normale de la surface touché et le vecteur de la lumière
 on fait `dot(lightVector,normal)`. Il suffit de clamp la valeur pour ne pas avoir des valeurs extreme.
