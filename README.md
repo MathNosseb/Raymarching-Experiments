@@ -4,6 +4,8 @@
 J'ai voulu tester de reproduire des effets visuel codé avec des shaders nottament pour creer des objets 3D,
 des effets visuel comme de la lumière réaliste, de la diffusion lumineuse, du [Raymarching](https://fr.wikipedia.org/wiki/Ray_marching), raytracing....
 
+![gifProjet](images/raymarching-sphere.gif)
+
 Ici les projets utilisent du Raymarching qui est une technique consotant a projeter des rayons depuis la 
 camera jusqu'à trouver une surface mais sans connaitre la position de la surface.
 
@@ -72,6 +74,7 @@ j'ai mis la valeur proportionnel a la distance parcouru pour avoir des ombres pl
 # Volumetric Clouds
 [shaderToy Project](https://www.shadertoy.com/view/f3X3Dr)
 
+![gifProjet](images/volumetric-clouds.gif)
 
 $$
 L = \int_0^D T(t)\cdot\sigma_s \cdot L_{\text{in}}(t)\space dt \approx \sum_{i} T_i \cdot \sigma_s \cdot\Delta t\cdot L_{\text{in}}(p_i)
